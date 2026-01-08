@@ -1,18 +1,11 @@
-# **HMARL-APO: Adversarial Optimization for Drone Interception**
+# **Adversarial Optimization Project**
 
 **Heterogeneous Multi-Agent Reinforcement Learning with Alternating Policy Optimization**
-
-## **📖 Abstract**
-
-In recent years, the use of Reinforcement Learning (RL) in robotics applications has been constantly increasing. Effective coordination between sensors and active agents is crucial for robotics systems operating in complex, dynamic environments.
-
-This study presents a novel simulation-based framework for adversarial security scenarios, where the deployment of detectors and interceptor drone launch pads is optimized using **Multi-Agent Reinforcement Learning (MARL)**. We introduce **Heterogeneous Multi Agent Reinforcement Learning with Alternating Policy Optimization (HMARL-APO)**, which employs two Independent Proximal Policy Optimization (IPPO) agents for detectors and interceptors.
-
-Our results demonstrate that HMARL-APO significantly outperforms baseline approaches, achieving a **72.2% interception rate** in the most complex scenario, substantially exceeding baseline performances of 28.7% and 47.2%.
 
 ## **📸 Visualization**
 
 The framework optimizes the placement of defensive units against adaptive adversaries.
+
 
 *Figure 1: Visualization of the simulation map including target trajectories.*
 
