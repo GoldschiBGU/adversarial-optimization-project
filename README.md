@@ -12,6 +12,7 @@ The framework optimizes the placement of defensive units against adaptive advers
 ### **Simulation Demo**
 
 Below is a demonstration of the agent performance at Level 6 (76.6% success rate).
+[**Simulation Level 1 (100% IR)**](https://github.com/user-attachments/assets/65891db3-2c6a-4a80-9574-edf28b66ab63)
 
 [**▶️ Watch Simulation Video (Level 6\)**](https://www.google.com/search?q=animations/Level%25206%252076.6%2525/simulation_level6_76.6.mp4)
 
