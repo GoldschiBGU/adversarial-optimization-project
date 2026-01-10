@@ -1,13 +1,9 @@
 # **Adversarial Optimization Project**
 
-**Heterogeneous Multi-Agent Reinforcement Learning with Alternating Policy Optimization**
 
 ## **📸 Visualization**
 
 The framework optimizes the placement of defensive units against adaptive adversaries.
-
-
-*Figure 1: Visualization of the simulation map including target trajectories.*
 
 ### **Simulation Demo**
 
@@ -40,11 +36,7 @@ The framework optimizes the placement of defensive units against adaptive advers
 
 ## **🛠️ Installation**
 
-1. Clone the repository:  
-   git clone \[https://github.com/yourusername/adversarial-optimization-project.git\](https://github.com/yourusername/adversarial-optimization-project.git)  
-   cd adversarial-optimization-project
-
-2. Install the required dependencies:  
+Install the required dependencies:  
    pip install \-r requirements.txt
 
 ## **🚀 Usage Guide**
@@ -96,16 +88,12 @@ Analyze the performance of your specific model number.
 
 ## **📊 Key Results**
 
-| Method | Interception Rate (Complex Scenario) |
+| Method | Interception Rate (Level 6) |
 | :---- | :---- |
 | **HMARL-APO (Ours)** | **72.2%** |
-| Baseline A | 47.2% |
-| Baseline B | 28.7% |
+| "Human Expert" (Our Geometric Design)| 47.2% |
+| Greedy Heuristic (Geometric Coverege) | 28.7% |
 
 ## **📜 License**
 
 Distributed under the MIT License. See LICENSE for more information.
-
-## **📧 Contact**
-
-Project Link: [https://github.com/yourusername/adversarial-optimization-project](https://www.google.com/search?q=https://github.com/yourusername/adversarial-optimization-project)
