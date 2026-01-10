@@ -14,9 +14,7 @@ from simulations import DroneSimulation
 # --- GLOBAL CONFIG & CLASSES ---
 torch.autograd.set_detect_anomaly(True)
 
-# ... (Keep your Class Definitions: Inter_Actor, Detect_Actor, Critic, PPO here) ...
 class Inter_Actor(nn.Module):
-    # ... (Your existing code) ...
     def __init__(self, input_dim, output_dim):
         super(Inter_Actor, self).__init__()
         self.fc = nn.Sequential(
@@ -48,7 +46,6 @@ class Inter_Actor(nn.Module):
 
 
 class Detect_Actor(nn.Module):
-    # ... (Your existing code) ...
     def __init__(self, input_dim, output_dim):
         super(Detect_Actor, self).__init__()
         self.fc = nn.Sequential(
@@ -110,7 +107,6 @@ def flatten_list(list_scores):
 
 
 class PPO:
-    # ... (Your existing code) ...
     def __init__(self, actor, critic, actor_lr=2.5e-4, critic_lr=1e-3, gamma=0.99, clip_eps=0.2):
         self.actor = actor
         self.critic = critic
@@ -417,3 +413,4 @@ if __name__ == '__main__':
                 filename = f"Level{simulation.level}_levelTrain.png"
                 plt.savefig(filename, dpi=300)
                 plt.close()  # Close plot to free memory
+
