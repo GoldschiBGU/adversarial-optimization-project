@@ -226,7 +226,7 @@ if __name__ == '__main__':
                 detect_actor = Detect_Actor(num_interceptors * 3 + num_detectors * 3, num_detectors * 3).to(device)
                 detect_critic = Critic(num_interceptors * 3 + num_detectors * 3).to(device)
 
-                simulation.level = 4
+                simulation.level = level
                 simulation.init_level2()
 
                 inter_agent = PPO(inter_actor, inter_critic, actor_lr=inter_actor_lr, critic_lr=critic_lr)
@@ -361,9 +361,9 @@ if __name__ == '__main__':
                             break
 
                 # After training, save to JSON
-                with open('inter_mean_std_log.json', 'w') as f:
+                with open(f'inter_mean_std_log{simulation.level}.json', 'w') as f:
                     json.dump(inter_monitor, f, indent=2, sort_keys=True)
-                with open('detect_mean_std_log.json', 'w') as f:
+                with open(f'detect_mean_std_log{simulation.level}.json', 'w') as f:
                     json.dump(detect_monitor, f, indent=2, sort_keys=True)
 
                 # Save final best configurations to file
@@ -413,4 +413,3 @@ if __name__ == '__main__':
                 filename = f"Level{simulation.level}_levelTrain.png"
                 plt.savefig(filename, dpi=300)
                 plt.close()  # Close plot to free memory
-
