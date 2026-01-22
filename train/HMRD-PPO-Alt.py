@@ -224,10 +224,6 @@ if __name__ == '__main__':
             for detect_actor_lr in [2.5e-4]:
 
                 script_dir = os.path.dirname(os.path.abspath(__file__))
-                # excel_file = os.path.join(script_dir, '..', 'init/town_data.xlsx')
-                # town_df = pd.read_excel(os.path.abspath(excel_file))
-                # towns = town_df.to_dict(orient='records')
-                # town_edges = hf.get_town_edges(towns)
 
                 excel_file = os.path.join(script_dir, '..', 'init/placements.xlsx')
                 interdetec_df = pd.read_excel(os.path.abspath(excel_file), sheet_name="Placements")
