@@ -55,13 +55,13 @@ Before training, define the environment and generate the initial baseline.
 
 ### **Step 2: Training**
 
-Train the agents using the Alternating Policy Optimization method.
+Train the agents.
 
-* **Train with HMARL-APO (Recommended):**  
-  python train/HMARL-APO.py
+* **Train with HMRD-PPO-Simul (Recommended):**  
+  python train/HMRD-PPO-Simul.py
 
-* *Alternative: Train with standard HMARL:*  
-  python train/HMARL.py
+* *Alternative: Train with Alternating version:*  
+  python train/HMRD-PPO-Alt.py
 
 ### **Step 3: Evaluation**
 
@@ -85,14 +85,6 @@ Analyze the performance of your specific model number.
 
   \# Compare against other models (Pareto Frontier)  
   python "results analysis/model\_final\_pareto\_plot.py"
-
-## **📊 Key Results**
-
-| Method | Interception Rate (Level 6) |
-| :---- | :---- |
-| **HMARL-APO (Ours)** | **72.2%** |
-| "Human Expert" (Our Geometric Design)| 47.2% |
-| Greedy Heuristic (Geometric Coverege) | 28.7% |
 
 ## **📜 License**
 
